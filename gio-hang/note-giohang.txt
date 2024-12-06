@@ -1,0 +1,20 @@
+// giỏ hàng (html)
+
+<div class="add-to-cart">
+    <div class="">
+        <div class="card">
+            <h1> Your Card</h1>
+            <ul class="listCard">
+                
+            </ul>
+            <div class="checkOut">
+                <div class="total">0</div>
+                <div class="closeShopping">Close</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+// nút mua với số 0 có nghĩ là id = 1 trong file javascript
+
+<button class="mua-game" onclick="addToCard(0)">Add To Card</button>

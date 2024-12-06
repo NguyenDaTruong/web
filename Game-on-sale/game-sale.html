@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epic Store</title>
+    <link rel="icon" href="/html+css/img/LOGO/logo-colum-no-border.png" type="image/x-icon" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/Game-on-sale/style-game-sale.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
+ 
+    
+</head>
+<body>
+    < id="main">
+        <!-- bắt đầu header -->
+        <header>
+            <form action="/html+css/trangchu/html/Index.html">
+                <button class="logo" ><a href="/html+css/trangchu/html/Index.html" style="text-decoration: none; color: #fff;">Epic Store</a></button>
+            </form>
+            <nav class="navigation">
+                <a href="/html+css/trangchu/html/Index.html">Home</a>
+                <a href="/Game-on-sale/game-sale.html">Game On Sale</a>
+                <a href="/Contact/html-css-js/index.html">Contact</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav> 
+
+        </header>
+        <!-- kết thúc header -->
+        <!-- bắt đầu nút đăng nhập -->
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2 style="color: #fff;">Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label style="color: #fff;">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label style="color: #fff;">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label> <input type="checkbox">
+                        Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#" class="register-link">
+                            Register
+                        </a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2 style="color: #fff;">Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label style="color: #fff;">User name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label style="color: #fff;">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label style="color: #fff;">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label> <input type="checkbox">
+                        I agree to the terms & conditions</label>
+                        
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p> Already have an account?<a href="#" class="login-link">
+                            Login
+                        </a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- kết thúc nút đăng nhập -->
+        <!-- bắt đầu thanh nav bên trái -->
+        <div class="sidebar">
+            <div class="logo-content">
+                <i class="bx bx-menu  " id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <i class="bx bx-search"></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Search</span> 
+
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-grid-alt"></i>
+                        <span class="links-name">Dashboard</span>
+                    </a>
+                  
+                </li>
+
+                <li>
+                    <a href="/html+css/trangchu/html/Trangchu.html">
+                        <i class="bx bx-home-alt"></i>
+                        <span class="links-name">Home</span>
+                    </a>
+                   
+                </li> 
+
+                 <li>
+                    <a href="#thu-vien">
+                        <i class="bx bx-movie-play"></i>
+                        <span class="links-name">Gallery</span>
+                    </a>
+                    
+                </li> 
+
+                 <li>
+                    <a class="shopping" href="#">
+                        <i class="bx bx-cart-alt"></i>
+                        <span class="links-name">Card</span>
+                    </a>
+                </li>
+
+            </ul>
+                    <!-- nút profile  -->
+            <div class="profile-content">
+                <div class="profile">
+                    <div class="profile-details">
+                        <img src="/html+css/img/profile/photo_2023-03-09_20-35-03.jpg" alt="">
+                        <div class="name-job">
+                            <div class="name">Trường</div>
+                            <div class="job">Univercity stydent</div>
+                        </div>
+                    </div>
+                    <i class="bx bx-log-out" id="log-out"></i>
+                </div>
+            </div>
+        </div>
+
+       
+        
+        <div class="home-content">
+            <div class="summer-sale">
+                <h2>
+                    Summer Sale
+                </h2>
+            </div>
+            <div class="slide-show">
+                <div class="slide">
+                  <div class="box1 ">
+                    <img src="/Game-on-sale/img/The-Day-Before/gGcvsEuZ1goT95AoWrvKCW8mjescYUGKK5oH1Nki.jpg" alt="">
+                  </div>
+
+                  <div class="box2">
+                    <img src="/Game-on-sale/img/STAR-WARS-Jedi-Survivor/Jedi-Switch.jpg" alt="">
+                  </div>
+
+                  <div class="box3">
+                    <img src="/Game-on-sale/img/Amnesia-The-Bunker/amnesia-the-bunker-4460.jpg" alt="">
+                  </div>
+
+                  <div class="box4">
+                    <img src="/Game-on-sale/img/Diablo-IV/blizzard-thong-bao-gio-xuat-hien-cua-boss-the-gioi-0.png" alt="">
+                  </div>
+
+                  <div class="box5">
+                    <img src="/Game-on-sale/img/Layers-of-Fear/capsule_616x353.jpg" alt="">
+                  </div>
+
+                  <div class="box6">
+                    <img src="/Game-on-sale/img/Hogwarts-Legacy/Hogwarts_Legacy.png" alt="">
+                  </div>
+
+                  <div class="box7">
+                    <img src="/Game-on-sale/img/Wo-Long-Fallen-Dynasty/capsule_616x353.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div id="test"></div>
+         
+      
+            
+             <div class="Summer">
+                <div class="Sale-on-day">
+                    <div>
+                        <h2 class=" title-sale">
+                            Game Sale Only Today
+                       </h2>
+                    </div>
+                    <div class="game">
+                            <img src="/Game-on-sale/img/Slide/the-last-of-us-part-2-review.png" alt="">
+                            <h2 class="title">The Last Of Us: Part II</h2>
+                            <div class="cost">
+                                <div class="price">-70%</div>
+                                <div class="price1"><del>530.000đ</del></div>
+                                <div class="price2">159.000đ</div>
+                            </div>
+                    </div>
+                    <div class="game-list">
+                        <ul>
+                          <li>
+                            <img src="/Game-on-sale/img/The-Day-Before/gGcvsEuZ1goT95AoWrvKCW8mjescYUGKK5oH1Nki.jpg" alt="">
+                            <div class="game-info">
+                              <h3>The Day Before</h3>
+                              <p>Free Today</p>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="/Game-on-sale/img/Amnesia-The-Bunker/amnesia-the-bunker-4460.jpg" alt="">
+                            <div class="game-info">
+                              <h3>Amnesia The Bunker</h3>
+                              <p>Free Today</p>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="/Game-on-sale/img/Diablo-IV/blizzard-thong-bao-gio-xuat-hien-cua-boss-the-gioi-0.png" alt="">
+                            <div class="game-info">
+                              <h3>Diablo IV</h3>
+                              <p>Free Today</p>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="/Game-on-sale/img/Layers-of-Fear/capsule_616x353.jpg" alt="">
+                            <div class="game-info">
+                              <h3>Layers of Fear</h3>
+                              <p>Free Today</p>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="/Game-on-sale/img/Dead-Space-Remake/918e3fd0-9d1b-11ed-bbfb-3c1d442192f8.cf.jpg" alt="">
+                            <div class="game-info">
+                              <h3>Dead Space Remake</h3>
+                              <p>Free Today</p>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="/Game-on-sale/img/STAR-WARS-Jedi-Survivor/Jedi-Switch.jpg" alt="">
+                            <div class="game-info" onclick="window.location.href=''">
+                                <h3>STAR WARS Jedi Survivor</h3>
+                                <p>Free Today</p>
+                            </div>
+                          </li>
+                          <li>
+                            <img src="/Game-on-sale/img/Wo-Long-Fallen-Dynasty/capsule_616x353.jpg" alt="">
+                            <div class="game-info">
+                              <h3>Wo Long Fallen Dynasty</h3>
+                              <p>Free Today</p>
+                            </div>
+                          </li>
+                        </ul>
+                    </div>
+                    <div class="game">
+                        <img src="/Game-on-sale/img/ARK-2/7189_cb56b4135a4faa11f35e.jpg" alt="">
+                        <h2 class="title">ARK 2</h2>
+                        <div class="cost">
+                            <div class="price">-70%</div>
+                            <div class="price1"><del>530.000đ</del></div>
+                            <div class="price2">159.000đ</div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="/Game-on-sale/img/atomic-heart/capsule_616x353.jpg" alt="">
+                        <h2 class="title">Atomic Heart</h2>
+                        <div class="cost">
+                            <div class="price">-60%</div>
+                            <div class="price1"><del>370.000đ</del></div>
+                            <div class="price2">148.000đ</div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="/Game-on-sale/img/dead-island-2/DeadIsland2.jpg" alt="">
+                        <h2 class="title">The Island 2</h2>
+                        <div class="cost">
+                            <div class="price">-70%</div>
+                            <div class="price1"><del>240.000đ</del></div>
+                            <div class="price2">72.000đ</div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="/Game-on-sale/img/dying-light-2/news5.jpg" alt="">
+                        <h2 class="title">Dying Light 2</h2>
+                        <div class="cost">
+                            <div class="price">-50%</div>
+                            <div class="price1"><del>260.000đ</del></div>
+                            <div class="price2">130.000đ</div>
+                        </div>                    
+                    </div>
+                    <div class="game">
+                        <img src="/Game-on-sale/img/Wild-Hearts/wild-hearts-featured-image.jpg.adapt.crop16x9.1023w.jpg" alt="">
+                        <h2 class="title">Wild Hearts</h2>
+                        <div class="cost">
+                            <div class="price">-80%</div>
+                            <div class="price1"><del>540.000đ</del></div>
+                            <div class="price2">108.000đ</div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="/Game-on-sale/img/Hogwarts-Legacy/Hogwarts_Legacy.png" alt="">
+                        <h2 class="title">Hogwarts Legacy</h2>
+                        <div class="cost">
+                            <div class="price">-90%</div>
+                            <div class="price1"><del>490.000đ</del></div>
+                            <div class="price2">49.000đ</div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="/Game-on-sale/img/resident-evil-4-remake/0-1677842587833346578473-1677914431119-16779144314121372753185-1678094623137-16780946233851589846966.webp" alt="">
+                        <h2 class="title">Resident Evil 4: Remake</h2>
+                        <div class="cost">
+                            <div class="price">-70%</div>
+                            <div class="price1"><del>490.000đ</del></div>
+                            <div class="price2">147.000đ</div>
+                        </div>
+                    </div>
+                    <div class="game" onclick="window.location.href='/nháp.html'">
+                            <img src="/Game-on-sale/img/son-of-the-forest/title-23.jpg" alt="">
+                            <h2 class="title">Son Of The Forest</h2>
+                        <div class="cost">
+                            <div class="price">-80%</div>
+                            <div class="price1"><del>330.000đ</del></div>
+                            <div class="price2">66.000đ</div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="/Game-on-sale/img/Dead-space-remake-4/Cau-Hinh-Cua-Dead-Space-Remake-4.jpg" alt="">
+                        <h2 class="title">Dead Space Remake</h2>
+                        <div class="cost">
+                            <div class="price">-50%</div>
+                            <div class="price1"><del>250.000đ</del></div>
+                            <div class="price2">125.000đ</div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="/Game-on-sale/img/Meet-Your-Maker/R.jpg" alt="">
+                        <h2 class="title">Meet Your Maker</h2>
+                        <div class="cost">
+                            <div class="price">-70%</div>
+                            <div class="price1"><del>380.000đ</del></div>
+                            <div class="price2">266.000đ</div>
+                        </div>
+                    </div>
+                    <div class="game">
+                        <img src="/Game-on-sale/img/System-Shock/ZubEY2WoDjkvt4YAUOpla-Sc_tqXQ6780twkUpvO-xI.webp" alt="">
+                        <h2 class="title">System Shock 2</h2>
+                        <div class="cost">
+                            <div class="price">-40%</div>
+                            <div class="price1"><del>180.000đ</del></div>
+                            <div class="price2">72.000đ</div>
+                        </div>
+                    </div>  
+                </div>
+             </div>
+             
+            
+     
+        </div>
+        <!-- end home-content -->
+  
+ 
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+           <!-- java link thu vien -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!-- link file java gio hang -->
+        <!-- <script src="/gio-hang/gio-hang.js"></script> -->
+
+
+        
+       
+
+
+<script src="/Game-on-sale/java-game-sale.js"></script>
+
+
+
+
+</div>  
+
+</body>
+</html>

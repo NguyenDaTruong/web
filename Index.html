@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epic Store</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/html+css/img/LOGO/logo-colum-no-border.png" type="image/x-icon" />
+    <!-- link css+ boxicons -->
+    <link rel="stylesheet" href="/html+css/trangchu/css/trangchu.css">
+    <link rel="stylesheet" href="/html+css/trangchu/css/responsice.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/html+css/trangchu/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/html+css/trangchu/css/style.css" />
+    
+</head>
+<body>
+    <div id="main">
+        <!-- bắt đầu header -->
+        <header>
+            <form action="/Index.html">
+                <button class="logo" ><a href="/Index.html" style="text-decoration: none; color: #fff;">Rising Game</a></button>
+            </form>
+            <nav class="navigation">
+                <a href="/Index.html">Home</a>
+                <a href="/Game-on-sale/game-sale.html">Game On Sale</a> 
+                <a href="/Contact/html-css-js/index.html">Contact</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav> 
+
+        </header>
+        <!-- kết thúc header -->
+        <!-- bắt đầu nút đăng nhập -->
+        <div class="wrapper"> 
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2 style="color: #fff;">Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required>
+                        <label style="color: #fff;">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label style="color: #fff;">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label> <input type="checkbox">
+                        Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account?<a href="#" class="register-link">
+                            Register
+                        </a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2 style="color: #fff;">Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label style="color: #fff;">User name</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="text" required>
+                        <label style="color: #fff;">Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" required>
+                        <label style="color: #fff;">Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label> <input type="checkbox">
+                        I agree to the terms & conditions</label>
+                        
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p> Already have an account?<a href="#" class="login-link">
+                            Login
+                        </a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- kết thúc nút đăng nhập -->
+        <!-- bắt đầu thanh nav bên trái -->
+        <div class="sidebar">
+            <div class="logo-content">
+                <i class="bx bx-menu  " id="btn"></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <i class="bx bx-search"></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Search</span> 
+
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-home-alt"></i>
+                            <span class="links-name">Home</span>
+                        </a>
+                        <!-- <span class="tooltip">Home</span> -->
+                    </li> 
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-grid-alt"></i>
+                        <span class="links-name">Dashboard</span>
+                    </a>
+                    <!-- <span class="tooltip">Dashboard</span> -->
+                </li>
+
+
+                 <li>
+                    <a href="#thu-vien">
+                        <i class="bx bx-movie-play"></i>
+                        <span class="links-name">Gallery</span>
+                    </a>
+                    <!-- <span class="tooltip">Gallery</span> -->
+                </li> 
+
+                 <li>
+                    <a href="#">
+                        <i class="bx bx-cart-alt"></i>
+                        <span class="links-name">Card</span>
+                    </a>
+                    <!-- <span class="tooltip">Card</span> -->
+                </li>
+
+            </ul>
+                    <!-- nút profile  -->
+            <div class="profile-content">
+                <div class="profile">
+                    <div class="profile-details">
+                        <img src="/html+css/img/profile/photo_2023-03-09_20-35-03.jpg" alt="">
+                        <div class="name-job">
+                            <div class="name">Trường</div>
+                            <div class="job">Univercity stydent</div>
+                        </div>
+                    </div>
+                    <i class="bx bx-log-out" id="log-out"></i>
+                </div>
+            </div>
+        </div>
+
+       
+        
+        <div class="home-content">
+            <!-- bắt đầu slide show  -->
+            <div class="video-show">
+                <video id="slider" autoplay muted loop>
+                  <source src="/html+css/img/video-show/intro.mp4" type="video/mp4">
+                </video>
+            
+                <ul class="navigation-video-show">
+                    <li onclick="videoUrl('/html+css/img/video-show/Titanfall 2 - Trim.webm')">  <img src="/html+css/img/video-show/Titanfall2-picture.jpg" alt=""></li>
+                    <li onclick="videoUrl('/html+css/img/video-show/intro.mp4')">  <img src="/html+css/img/LOGO/Screenshot 2023-12-03 141704.png" alt=""></li>
+                  <li onclick="videoUrl('/html+css/img/video-show/God of War Ragnarök.webm')">  <img src="/html+css/img/video-show/God of War Ragnarök.jpg" alt=""></li>
+                </ul>
+              </div>
+
+              <script type="text/javascript">
+                function videoUrl(hmmmmmm){
+                      document.getElementById("slider").src=hmmmmmm;
+                }
+              </script>
+
+
+
+            
+            
+            <h2 class="title-GOTY">Game of The Year Edition</h2>
+            <div class="game-of-the-year">
+                <div class="GOTY">
+                    <a href="/chi-tiet-game/tranggame.html"><img src="/html+css/img/3-game-of-the-year/elden-ring-2022.webp" alt=""></a> 
+                    <div class="tieu-de">
+                        <h2>Elden Ring <br>(2022)</h2> 
+                    </div>  
+                </div>
+                <div class="GOTY">
+                    <img src="/html+css/img/3-game-of-the-year/Forza-Horizon-5-2021.jpg" alt="">
+                    <div class="tieu-de">
+                        <h2>Forza Horizon 5 <br>(2021)</h2>
+                        
+                    </div>  
+                </div>
+                <div class="GOTY">
+                    <img src="/html+css/img/3-game-of-the-year/the-last-of-us-part-2-2020.jpg" alt="">
+                    <div class="tieu-de">
+                        <h2>The Last Of Us,<br>(2020)</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="thu-vien" class="hover-picture">
+                <div class="pic">Gallery</div>
+                <div class="kodfun-galeri">
+                    <div class="for-fun" style="background-image: url(/html+css/img/for-fun/ghost.jpg);"></div>
+                    <div class="for-fun" style="background-image: url(/html+css/img/for-fun/call\ of\ duty.jpg);"></div>
+                    <div class="for-fun" style="background-image: url(/html+css/img/for-fun/wallpaperflare.com_wallpaper\ \(1\).jpg);"></div>
+                    <div class="for-fun" style="background-image: url(/html+css/img/for-fun/scopion.jpg);"></div>  
+                    <div class="for-fun" style="background-image: url(/html+css/img/for-fun/God-of-war.jpg);"></div>
+                </div>
+            </div>
+
+            <!-- game free -->
+            <div class="free-game">
+                <div class="gitf-free">
+                    <i class='bx bx-gift' ></i> 
+                    <h2 class="Free-Game">Free Game</h2>
+                </div>
+                
+                <div class="box-game-available">
+
+                    <div class="game-available">
+                         <img src="/html+css/img/game-on-free/unknow.webp" alt="">
+                        <div class="Free-Now">
+                            <span>Free Now</span>
+                       </div>
+
+                        <div class="name-game-free">
+                            <h2>Newgenesis</h2>
+                            <p>Free Now</p>
+                        </div>
+                    </div>
+    
+                    <div class="game-available">
+                        <img src="/html+css/img/game-on-free/CenturyAgeofAshes.webp" alt="">
+                        <div class="Free-Now">
+                            <span>Free Now</span>
+                       </div>
+
+                        <div class="name-game-free">
+                            <h2>Centery Age Of Ashes</h2>
+                            <p>Free Now</p>
+
+                        </div>
+                    </div>
+    
+                    <div class="game-available">
+                        <a href="https://genshin.hoyoverse.com/en/home"> <img src="/html+css/img/game-on-free/GenshinImpact.webp" alt=""></a>
+                        <div class="Free-Now">
+                            <span>Free Now</span>
+                       </div>
+
+                        <div class="name-game-free">
+                            <h2>Genshin Impact</h2>
+                            <p>Free Now</p>
+                        </div>
+                    </div>
+    
+                    <div class="game-available">
+                        <img src="/html+css/img/game-on-free/Launcher_Blade.webp" alt="">
+                        <div class="coming-soon">
+                            <span>Coming Soon</span>
+                       </div>
+
+                        <div class="name-game-free">
+                            <h2>Fortnite</h2>
+                            <p>Free May 04 - May 11</p>
+                        </div>
+                    </div>
+    
+                    <div class="game-available">
+                        <img src="/html+css/img/game-on-free/pubg-battlegrounds.webp" alt="">
+                        <div class="coming-soon">
+                            <span>Coming Soon</span>
+                            
+                       </div>
+
+                        <div class="name-game-free">
+                            <h2>PUBG Battlegrounds</h2>
+                            <p>Free May 04 - May 11</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <!-- 3 cái cột -->
+            <div class="popular">
+                <ul class="three-columns">
+                    <li class="one">
+                        <div class="list-one">
+                            <div class="title-one">
+                                <h2>New Releases</h2>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <ul class="game-list-columns-one">
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/one/world-turtles-jvr3y.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>World Turtles</h3>
+                                        <p> <s>₫209,000</s>    <u>đ</u> 167,200</p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/one/the-witch-of-fern-island-7hrqd.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>The Witch of Fern Island</h3>
+                                        <p> <s>₫209,000</s>     <u>đ</u> 167,200</p>    
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="game-in-list"> 
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/one/rice-cj0l8.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>R.I.C.E.</h3>
+                                        <p> <s>₫31,000</s>     <u>đ</u> 20,000</p>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/one/Redfall.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>Redfall</h3>
+                                        <p>   <u>đ</u> 999,999</p>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/one/download-monster-tribe-offer-13v7c.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>Monster Tribe</h3>
+                                        <p> <s>₫186,000</s>    <u>đ</u>148,800</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="two">
+                        <div class="list-two">
+                            <div class="title-two">
+                                <h2>Top Player Rated</h2>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <ul class="game-list-columns-two">
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/two/1200x1600-1200x1600-e92fa6b99bb20c9edee19c361b8853b9.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>Hades</h3>
+                                        <p> <s></s>    <u>đ</u>289,800</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/two/CodeRedemption_Celeste-340x440-873dacb76be8c59d659757b4b5284a611_1200x1600-9e39079f1ce19738e65d349a8bc98650.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>Caleste</h3>
+                                        <p> <s></s>    <u>đ</u>184,800</p>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/two/EGS_BaldursGateIIEnhancedEdition_Beamdog_S2_1200x1600-58e707a92074345a5c1ae8ad9aabdec1.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>Baldur's Gate II</h3>
+                                        <p> <s></s>    <u>đ</u>89,800</p>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/two/PP1_TallImage_1200x1600-fe8ca9d7be58d90903ddf0d40d7b061c.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>The Jackbox Party Pack</h3>
+                                        <p> <s></s>    <u>đ</u>98,800</p>
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/two/PP3_TallImage_1200x1600-1205b9298ea48a4d4d57b8408ec3fad3.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>Jackbox Party Pack 3</h3>
+                                        <p> <s></s>    <u>đ</u>123,800</p>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="three">
+                        <div class="list-three">
+                            <div class="title-three">
+                                <h2>Coming Soon</h2>
+                            </div>
+                        </div>
+                        <ul class="game-list-columns-three">
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/three/blipz-1k65o.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>Blipz</h3>
+                                        <p>Available 05/03/23</p>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/three/EGS_AgeofWonders4_TriumphStudios_S2_1200x1600-6753645ce36ddcfd00142d40143f3c46.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>Age of Wonders 4</h3>
+                                        <p>Available 05/03/23</p>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/three/mia-and-the-dragon-princess-1o406.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>Mia and the Dragon Princess</h3>
+                                        <p>Available 05/03/23</p>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/three/showgunners-12f97.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>Showgunners</h3>
+                                        <p>Available 05/04/23</p>
+                                    </div>
+                                </div>
+                            </li>
+    
+                            <li class="game-in-list">
+                                <div class="gamess">
+                                    <img src="/html+css/img/three-columns/three/sphere-3-19b77.webp" alt="">
+                                    <div class="gamesss">
+                                        <h3>Sphere 3</h3>
+                                        <p>Available 05/04/23</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+
+                </ul>
+            </div>
+
+
+            <!-- mấy cái list -->
+            <div class="list-scroll">
+                <div class="title-list-scroll">Top Game <i class='bx bx-chevrons-right' ></i> </div>
+                <div class="swiper mySwiper card-slider">
+                    <div class="swiper-wrapper conent">
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="hinh">
+                                    <img src="/html+css/img/card-slider/EGS_Cyberpunk2077_CDPROJEKTRED_S2_03_1200x1600-b1847981214ac013383111fc457eb9c5.webp" alt="">
+                                </div>
+                                <div class="name-of-game">
+                                    <span class="genre">Classify: Triple A</span>
+                                    <span class="name">Cyberpunk 2077</span>
+                                </div>
+                                <div class="price">
+                                    <p> <s></s>    <u>đ</u>999,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="hinh">
+                                    <img src="/html+css/img/card-slider/EGS_GhostwireTokyoTall_1200x1600-7b8a36d1dfe782ed625e6c6bba487df9.webp" alt="">
+                                </div>
+                                <div class="name-of-game">
+                                    <span class="genre">Classify: Triple A</span>
+                                    <span class="name">Ghostwire Tokiyo</span>
+                                </div>
+                                <div class="price">
+                                    <p> <s></s>    <u>đ</u>999,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="hinh">
+                                    <img src="/html+css/img/card-slider/GTAV_EGS_Artwork_1200x1600_Portrait Store Banner-1200x1600-382243057711adf80322ed2aeea42191.webp" alt="">
+                                </div>
+                                <div class="name-of-game">
+                                    <span class="genre">Classify: Triple A</span>
+                                    <span class="name">Grand Theft Auto V</span>
+                                </div>
+                                <div class="price">
+                                    <p> <s></s>    <u>đ</u>999,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="hinh">
+                                    <img src="/html+css/img/card-slider/EGS_BeyondBlue_ELineMedia_S2-1200x1600-66ee2b1322a74ff2e35e462d644ff519.webp" alt="">
+                                </div>
+                                <div class="name-of-game">
+                                    <span class="genre">Classify: BASE GAME</span>
+                                    <span class="name">BeyondBlue</span>
+                                </div>
+                                <div class="price">
+                                    <p> <s></s>    <u>đ</u>373,800</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="hinh">
+                                    <img src="/html+css/img/card-slider/download-the-last-case-of-benedict-fox-offer-1m9xn.webp" alt="">
+                                </div>
+                                <div class="name-of-game">
+                                    <span class="genre">Classify: BASE GANE</span>
+                                    <span class="name">The Last Case Of Benedict Fox</span>
+                                </div>
+                                <div class="price">
+                                    <p> <s></s>    <u>đ</u>171,800</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="hinh">
+                                    <img src="/html+css/img/card-slider/amogusportrait_1200x1600-66ad0e4d363e1c92f9f8aae67a96dd31.webp" alt="">
+                                </div>
+                                <div class="name-of-game">
+                                    <span class="genre">Classify: BASE GAME</span>
+                                    <span class="name">Among us</span>
+                                </div>
+                                <div class="price">
+                                    <p> <s></s>    <u>đ</u>71,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="hinh">
+                                    <img src="/html+css/img/card-slider/EGS_DeadbyDaylight_BehaviourInteractive_S2_1200x1600-a1c30209e3b9fb63144daa9b5670f503.webp" alt="">
+                                </div>
+                                <div class="name-of-game">
+                                    <span class="genre">Classify: BASE GAME</span>
+                                    <span class="name">Dead by Daylight</span>
+                                </div>
+                                <div class="price">
+                                    <p> <s></s>    <u>đ</u>189,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="hinh">
+                                    <img src="/html+css/img/card-slider/EGS_HonkaiImpact3rd_miHoYoLimited_S2_1200x1600-1b38bfc22a3cbe6a187573afb4811860.webp" alt="">
+                                </div>
+                                <div class="name-of-game">
+                                    <span class="genre">Classify: BASE GAME</span>
+                                    <span class="name">Honkai Impact 3</span>
+                                </div>
+                                <div class="price">
+                                    <p> <s></s>    <u>đ</u>Free</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="hinh">
+                                    <img src="/html+css/img/card-slider/EGS_TheCallistoProtocol_StrikingDistanceStudios_S2_1200x1600-1e31eacc92833279f5b7a8d07cd3826c.webp" alt="">
+                                </div>
+                                <div class="name-of-game">
+                                    <span class="genre">Classify: Triple A</span>
+                                    <span class="name">The Callisto Protocol</span>
+                                </div>
+                                <div class="price">
+                                    <p> <s></s>    <u>đ</u>999,000</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- 2 cái slide cho đẹp -->
+            <div class="two-slide-information">
+                <div class="information">
+                    <img src="/html+css/img/information/egs-stranded-alien-dawn-breaker-1920x1080-d467e21e174c.webp" alt="">
+                    <h2>Stranded: Alien Dawn</h2>
+                    <p>Brave a new world in Stranded: Alien Dawn, a planet survival sim placing the fate of a small marooned group in your hands.</p>
+                    <div class="sale-price-1"> <s></s>    <u>đ</u>460,000</div>
+                </div>
+
+                <div class="information">
+                    <img src="/html+css/img/information/egs-f1-2023-breaker-1920x1080-f87ed7f40810.webp" alt="">
+                    <h2>EA SPORTS™ F1® 23</h2>
+                    <p>Pre-purchase F1® 23 Champions Edition now for limited-time content!</p>
+                    <div class="sale-price-2"> <s></s>    <u>đ</u>1,590,000</div>
+                </div>
+            </div>
+
+            <!-- in coming -->
+            <div class="container swiper">
+                <div class="date">
+                    <div class="date-time">Available in: </div>
+                    <div id="countdown"></div> 
+                </div>
+                <div class="slide-container">
+                  <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide"> 
+                      <div class="image-box">
+                        <img src="/html+css/img/in-coming/anh-troc.png" alt="">
+                      </div>
+                      <div class="profile-details">
+                        <div class="name-job">
+                          <h3 class="name">God of War</h3>
+                          <h4 class="job">Action, Adventure, Open world</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                      <div class="image-box">
+                        <img src="/html+css/img/in-coming/Call of duty.png" alt="">
+                      </div>
+                      <div class="profile-details">
+                        <div class="name-job">
+                          <h3 class="name">Call of Duty </h3>
+                          <h4 class="job">Action, FPS </h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        
+                      <div class="image-box">
+                        <img src="/html+css/img/in-coming/chua-ra-nen-chua-biet.jpg" alt="">
+                      </div>
+                      <div class="profile-details">
+                        <div class="name-job">
+                          <h3 class="name">Armored Core VI</h3>
+                          <h4 class="job"> Mecha </h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                      <div class="image-box">
+                        <img src="/html+css/img/in-coming/game-phu-thuy.webp" alt="">
+                      </div>
+                      <div class="profile-details">
+                        <div class="name-job">
+                          <h3 class="name">Hogwarts Legacy</h3>
+                          <h4 class="job">Fantasy, Open World, Magic</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                      <div class="image-box">
+                       <img src="/html+css/img/in-coming/game-so-vl.png" alt="">
+                      </div>
+                      <div class="profile-details">
+                        <div class="name-job">
+                          <h3 class="name">Outlast Trials</h3>
+                          <h4 class="job">Survival, Horror</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                         <img src="/html+css/img/in-coming/OIP.jpg" alt="">
+                        </div>
+                        <div class="profile-details">
+                          <div class="name-job">
+                            <h3 class="name">Assassin's Creed</h3>
+                            <h4 class="job">Open Wrold, Sneaks, Mudder</h4>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="image-box">
+                         <img src="/html+css/img/in-coming/road-96-button-01-1607651273036.jpg" alt="">
+                        </div>
+                        <div class="profile-details">
+                          <div class="name-job">
+                            <h3 class="name">Road 96</h3>
+                            <h4 class="job">Relax, Open World</h4>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <!-- Chân trang -->
+            <div class="out-line-footer">
+                <div class="footer-container">
+                    <div class="bar">
+                        <button class="scroll-to-top-btn" onclick="scrollToTop()">Quay lại đầu trang</button>
+                    </div>
+                
+                    <div class="button-container">
+                      <div class="button" style="--color:#6aff6350">
+                        <div class="dot"></div>
+                        <div class="light"></div>
+                        <button>
+                          <i class='bx bxl-discord-alt'></i>
+                          <span>Discord</span>
+                        </button>
+                      </div>
+                
+                      <div class="button" style="--color:#f08324">
+                        <div class="dot"></div>
+                        <div class="light"></div>
+                        <button>
+                          <i class='bx bxl-facebook-circle' ></i>
+                          <span>Facebook</span>
+                        </button>
+                      </div>
+                
+                      <div class="button" style="--color:#f00abd">
+                        <div class="dot"></div>
+                        <div class="light"></div>
+                        <button>
+                          <i class='bx bxl-twitter' ></i>
+                          <span>Twitter</span>
+                        </button>
+                      </div>
+                
+                      <div class="button" style="--color:#f0515450">
+                        <div class="dot"></div>
+                        <div class="light"></div>
+                        <button>
+                          <i class='bx bxl-youtube' ></i>
+                          <span>Youtube</span>
+                        </button>
+                      </div>
+                
+                    </div>
+                    <span class="footer-title">@Power by Trường </span>
+                  </div>
+             </div>
+            
+
+            
+            
+            
+            
+            
+               
+        </div>
+       
+        <!-- end home-content -->
+  
+        <script src="/html+css/trangchu/javas/jas.js"></script> 
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+            </script>
+
+
+<script src="/html+css/trangchu/javas/script.js"></script>
+<script src="/html+css/trangchu/javas/swiper-bundle.min.js"></script>
+
+<!-- đếm ngược time  -->
+<script>
+    
+    const endDate = new Date();
+    endDate.setDate(endDate.getDate() + 30);
+    
+    const timeRemaining = endDate.getTime() - Date.now();
+    
+    
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    
+    
+    setInterval(() => {
+        const timeRemaining = endDate.getTime() - Date.now();
+        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+        
+        document.getElementById("countdown").innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+    }, 1000);
+    
+    document.getElementById("countdown").innerHTML = `${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+    </script>
+</div>  
+
+</body>
+</html>
